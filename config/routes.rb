@@ -6,5 +6,12 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  # root "CriptosController#index"
+  # config/routes.rb  
+
+  namespace :api do
+    resources :criptos
+    post '/investment/calculate_profit', to: 'investment#calculate_profit'
+  end  
+
 end
