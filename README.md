@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Instal proyect
+
+* rails db:migrate
+
+* rails db:seed
+
+* rails s
